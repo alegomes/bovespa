@@ -1,4 +1,7 @@
-class Ativo
+require 'net/http'
+require 'nokogiri'
+
+class Bovespa
 
 	def initialize(codigo_ativo)
 		Net::HTTP.start('www.bmfbovespa.com.br') do |http|

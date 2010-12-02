@@ -1,3 +1,6 @@
+require 'net/http'
+require 'nokogiri'
+
 class Bovespa
 
 	def initialize(codigo_ativo)
