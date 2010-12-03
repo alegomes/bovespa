@@ -1,0 +1,7 @@
+Bovespa is a Ruby wrapper for the bovespa stock quote service's API.
+
+Instalation:
+gem install bovespa
+
+Usage:
+Examples can be found at marcofnogueira.wordpress.com/2010/12/01/cotacoes-das-acoes-na-bolsa-de-valores-com-ruby-e-sinatra/
