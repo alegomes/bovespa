@@ -1,12 +1,11 @@
 require 'net/http'
 require 'nokogiri'
-
+require 'get_xml'
 class Bovespa
 
 	def initialize(codigo_ativo)
-		Net::HTTP.start('www.bmfbovespa.com.br') do |http|
-			@resultado = http.get('/cotacoes2000/formCotacoesMobile.asp?codsocemi='+codigo_ativo).body
-		end
+		@conexao = Connection.new(codigo_ativo)
+		@resultado = @conexao.get_xml
 		@info = Nokogiri::XML(@resultado)
 		
 		@info.css('PAPEL').each do |node|

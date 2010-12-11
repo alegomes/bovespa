@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.7")
   s.summary = %q{Ruby wrapper for the Bovespa API}
-  s.version = '0.5.2'
+  s.version = '0.5.3'
 end 
